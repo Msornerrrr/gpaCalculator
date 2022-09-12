@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> GPA Calculator</title>
+        <link href="./style.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <header>
+            <h1> GPA Calculator </h1>
+        </header>
+        <main>
+            <div id="calculator">
+                <h2> Course Calculator: </h2>
+                <form method="post" id="new-post">
+                    <div class="form-content">
+                        <div>
+                            <label for="course-grade1"> Course Grade: </label>
+                            <select name="course-grade1" id="course-grade1">
+                                <option value="-">-</option>
+                                <option value="A">A</option>
+                                <option value="A-">A-</option>
+                                <option value="B+">B+</option>
+                                <option value="B">B</option>
+                                <option value="B-">B-</option>
+                                <option value="C+">C+</option>
+                                <option value="C">C</option>
+                                <option value="C-">C-</option>
+                                <option value="D+">D+</option>
+                                <option value="D">D</option>
+                                <option value="F">F</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="course-credit1"> Course Credit(s): </label>
+                            <select name="course-credit1" id="course-credit1">
+                                <option value="-">-</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </div>
+                        <h3 class="cancel"> X </h3>
+                    </div>
+                    <div id="add-new"> + Add Another Course + </div>
+                    <div id="form-result">
+                        <h3 id="gpa-display"> 0.000 </h3>
+                        <button id="submit"> Calculate Final GPA </button>
+                    </div>
+                </form>
+                <div id="notes">
+                    <h3> How to Calculate Your GPA: </h3>
+                    <ol>
+                        <li>Select Your Letter Grade</li>
+                        <li>Select Your Course Credits</li>
+                        <li>Add More Courses if Necessary</li>
+                        <li>Delete Course if Mistakenly Added</li>
+                        <li>Then, Calculate the Final GPA</li>
+                    </ol>
+                    <p>Tips: use 'tab' shortcut to quickly nevigate dropdown list</p>
+                </div>
+            </div>
+        </main>
+        <script src="./main.js"></script>
+    </body>
+</html>
